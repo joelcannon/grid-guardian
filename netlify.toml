@@ -1,0 +1,13 @@
+[build]
+  base    = "."
+  publish = "build/"
+  command = "npm run build"
+
+[context.production.environment]
+  NODE_VERSION = "14"
+
+[context.deploy-preview]
+  command = "npm run build"
+
+[context.branch-deploy]
+  command = "npm run build"
