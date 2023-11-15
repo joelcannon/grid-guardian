@@ -2,6 +2,8 @@
 
 # grid-guardian
 
+https://creative-muffin-4d1f7b.netlify.app/
+
 ## Purpose
 
 GridGuardian is a web application to monitor the health of electrical grids using energy harvesting wireless IoT connected sensor devices. It will track key metrics like voltage, tilt, temperature, etc and provide real-time alerts on any issues. The goal is to improve grid reliability and prevent failures.
