@@ -13,6 +13,7 @@
   },
   "author": "Joel Cannon",
   "devDependencies": {
+    "@vitejs/plugin-vue": "^4.4.1",
     "eslint": "^8.26.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
