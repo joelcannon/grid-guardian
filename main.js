@@ -3,6 +3,11 @@ import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
 
+console.log(`App version: ${__APP_VERSION__}`);
+
+// Display the version number somewhere in your website
+// document.getElementById('version').textContent = `Version: ${__APP_VERSION__}`;
+
 document.querySelector('#app').innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
@@ -17,6 +22,9 @@ document.querySelector('#app').innerHTML = `
     </div>
     <p class="read-the-docs">
       Click on the Vite logo to learn more
+    </p>
+    <p id= "version">
+      Version: "${__APP_VERSION__}"
     </p>
   </div>
 `
