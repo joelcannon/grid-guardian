@@ -7,8 +7,9 @@ const loader = new Loader({
 
 loader.load().then(() => {
   const map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: -34.397, lng: 150.644 },
-    zoom: 8,
+    //  center: { lat: 39.930213, lng: -93.932722 },
+    center: { lat: 39.93459, lng: -93.924026 },
+    zoom: 18,
     mapTypeId: "satellite",
   });
 });
