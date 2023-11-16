@@ -95,3 +95,17 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* Styles for screens that are 600px or wider */
+@media screen and (min-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+/* Styles for screens that are less than 600px wide */
+@media screen and (max-width: 599px) {
+  body {
+    background-color: lightcoral;
+  }
+}
