@@ -1,12 +1,13 @@
 // vite.config.js
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import pkg from './package.json'
+import { defineConfig } from "vite";
+import vue from "@vitejs/plugin-vue";
+import pkg from "./package.json";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  root: "./src",
   plugins: [vue()],
   define: {
-    __APP_VERSION__: JSON.stringify(pkg.version)
-  }
-})
+    __APP_VERSION__: JSON.stringify(pkg.version),
+  },
+});
