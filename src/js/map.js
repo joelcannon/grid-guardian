@@ -12,4 +12,12 @@ loader.load().then(() => {
     zoom: 18,
     mapTypeId: "satellite",
   });
+
+  // Add click event listener to map
+  google.maps.event.addListener(map, "click", function (event) {
+    new google.maps.Marker({
+      position: event.latLng,
+      map: map,
+    });
+  });
 });
