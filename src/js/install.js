@@ -15,9 +15,9 @@ loader.load().then(() => {
 
   // Add click event listener to map
   google.maps.event.addListener(map, "click", function (event) {
-    // new google.maps.Marker({
-    //   position: event.latLng,
-    //   map: map,
-    // });
+    new google.maps.Marker({
+      position: event.latLng,
+      map: map,
+    });
   });
 });
