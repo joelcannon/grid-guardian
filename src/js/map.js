@@ -1,4 +1,5 @@
 import { Loader } from "@googlemaps/js-api-loader";
+import { loadMarkersFromLocalStorage } from "./util.js";
 
 const loader = new Loader({
   apiKey: "AIzaSyA5_4E24xxgD4akSaTxi1Bs2QRsSLEqOIM",
@@ -11,6 +12,14 @@ loader.load().then(() => {
     center: { lat: 39.93459, lng: -93.924026 },
     zoom: 18,
     mapTypeId: "satellite",
+  });
+
+  let markers = loadMarkersFromLocalStorage();
+  markers.forEach((markerData) => {
+    new google.maps.Marker({
+      position: markerData.position,
+      map: map,
+    });
   });
 
   // Add click event listener to map
