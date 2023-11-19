@@ -11,7 +11,7 @@ export default defineConfig({
     __APP_VERSION__: JSON.stringify(pkg.version),
   },
   build: {
-    outDir: "dist",
+    outDir: "../dist",
     emptyOutDir: true,
     // rollupOptions: {
     //   input: {
