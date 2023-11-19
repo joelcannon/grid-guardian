@@ -13,12 +13,12 @@ export default defineConfig({
   build: {
     outDir: "../dist",
     emptyOutDir: true,
-    // rollupOptions: {
-    //   input: {
-    //     main: "index.html",
-    //     map: "map.html",
-    //     install: "install.html",
-    //   },
-    // },
+    rollupOptions: {
+      input: {
+        main: "index.html",
+        map: "map.html",
+        install: "install.html",
+      },
+    },
   },
 });
